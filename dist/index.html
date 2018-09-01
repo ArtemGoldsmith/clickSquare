@@ -1,0 +1,64 @@
+<!-- Head -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>clickSquare</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="assets/plugins/base-sizing.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/html5shiv.min.js"></script>
+	<script src="assets/plugins/respond.min.js"></script>
+	<![endif]-->
+</head>
+<!-- /Head -->
+
+<div class="app">
+	<div class="time" id="time">
+		<span id="milliseconds">000 milliseconds</span>
+	</div>
+	<div class="score-wrapper">
+		<div class="score-box">
+			<div>Player</div>
+			<div class="score" id="player1">0</div>
+		</div>
+		<div class="score-box">
+			<div>Computer</div>
+			<div class="score" id="player2">0</div>
+		</div>
+	</div>
+	<div class="difficulty">
+		<div class="difficulty__block">
+			<input type="radio" id="easy" name="difficulty" value="easy" checked>
+			<label for="easy" class="difficulty__block--item btn">Easy</label>
+		</div>
+		<div class="difficulty__block">
+			<input type="radio" id="normal" name="difficulty" value="normal">
+			<label for="normal" class="difficulty__block--item btn">Normal</label>
+		</div>
+		<div class="difficulty__block">
+			<input type="radio" id="hard" name="difficulty" value="hard">
+			<label for="hard" class="difficulty__block--item btn">Hard</label>
+		</div>
+		<div class="difficulty__block">
+			<input type="radio" id="unreal" name="difficulty" value="unreal">
+			<label for="unreal" class="difficulty__block--item btn">Unreal</label>
+		</div>
+	</div>
+	<div class="square-container">
+		<div class="square"></div>
+	</div>
+	<button type="button" value="Start" class="btn start" id="startBtn">Start</button>
+	<div id="message" class="modal">
+		<div class="message-text" id="win">You win!</div>
+		<div class="message-text" id="lose">You lose!</div>
+		<div class="message-text" id="time-result"></div>
+		<button type="button" value="Menu" class="btn" id="menuBtn">Menu</button>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<!-- /Scripts -->
